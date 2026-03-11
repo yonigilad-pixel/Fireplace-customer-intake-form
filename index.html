@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chimney & Fireplace Service Intake Form</title>
+<style>
+body{
+  font-family:Arial,sans-serif;
+  background:#f4f6f9;
+  margin:0;
+  padding:20px;
+}
+.container{
+  max-width:720px;
+  margin:auto;
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+.logo{
+  display:block;
+  margin:0 auto 10px;
+  max-width:260px;
+  width:100%;
+  height:auto;
+}
+h1{
+  text-align:center;
+  color:#123b7a;
+  margin-bottom:5px;
+}
+.subtitle{
+  text-align:center;
+  color:#666;
+  margin-bottom:30px;
+}
+label{
+  display:block;
+  margin-top:15px;
+  font-weight:bold;
+}
+input, select, textarea{
+  width:100%;
+  padding:12px;
+  margin-top:5px;
+  border:1px solid #ccc;
+  border-radius:6px;
+  font-size:15px;
+  box-sizing:border-box;
+}
+textarea{
+  resize:vertical;
+}
+button{
+  margin-top:25px;
+  background:#123b7a;
+  color:white;
+  padding:16px;
+  border:none;
+  width:100%;
+  font-size:17px;
+  border-radius:6px;
+  cursor:pointer;
+}
+.hidden{
+  display:none;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="logo.JPG" class="logo" alt="GasFix Fireplace Services Logo">
+
+  <h1>Chimney & Fireplace Service Intake Form</h1>
+
+  <p class="subtitle">
+    Please complete this form before your appointment so we can prepare for your chimney or fireplace service visit.
+  </p>
+
+  <form action="https://formsubmit.co/eitangonen942@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New Chimney & Fireplace Service Intake">
+
+    <label>Full Name</label>
+    <input type="text" name="Name" required>
+
+    <label>Date</label>
+    <input type="date" name="Date">
+
+    <label>Address</label>
+    <input type="text" name="Address">
+
+    <label>Phone</label>
+    <input type="tel" name="Phone">
+
+    <label>Email</label>
+    <input type="email" name="Customer Email">
+
+    <label>1. What issue are you experiencing with the fireplace?</label>
+    <select name="Issue" id="issueSelect" onchange="toggleOther()">
+      <option value="Fireplace not turning on">Fireplace not turning on</option>
+      <option value="Weak or uneven flame">Weak or uneven flame</option>
+      <option value="Gas smell">Gas smell</option>
+      <option value="Strange noise from fireplace">Strange noise from fireplace</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <div id="otherBox" class="hidden">
+      <label>Please describe the issue</label>
+      <textarea name="Other issue" rows="3"></textarea>
+    </div>
+
+    <label>2. Do you smell gas near the fireplace?</label>
+    <select name="Gas smell">
+      <option>Yes</option>
+      <option>No</option>
+      <option>Not sure</option>
+    </select>
+
+    <label>3. Approximately how old is the fireplace?</label>
+    <select name="Age">
+      <option>Less than 10 years</option>
+      <option>10–20 years</option>
+      <option>20+ years</option>
+      <option>Not sure</option>
+    </select>
+
+    <label>4. When was the last time the fireplace was serviced?</label>
+    <select name="Last service">
+      <option>Less than 1 year ago</option>
+      <option>1–3 years ago</option>
+      <option>More than 3 years ago</option>
+      <option>Not sure</option>
+    </select>
+
+    <label>5. When did the issue start?</label>
+    <select name="Issue started">
+      <option>Recently</option>
+      <option>A few weeks ago</option>
+      <option>A few months ago</option>
+      <option>Long time</option>
+    </select>
+
+    <label>6. What type of fireplace do you have?</label>
+    <select name="Fireplace type">
+      <option>Gas fireplace</option>
+      <option>Wood burning fireplace</option>
+      <option>Electric fireplace</option>
+      <option>Not sure</option>
+    </select>
+
+    <button type="submit">Submit Intake Form</button>
+  </form>
+</div>
+
+<script>
+function toggleOther(){
+  var select = document.getElementById("issueSelect");
+  var box = document.getElementById("otherBox");
+  box.style.display = select.value === "Other" ? "block" : "none";
+}
+</script>
+</body>
+</html>
