@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chimney & Fireplace Service Intake Form</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background:#f5f6fa;
+margin:0;
+padding:0;
+}
+
+.container{
+max-width:700px;
+margin:40px auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1{
+text-align:center;
+margin-bottom:10px;
+}
+
+.subtitle{
+text-align:center;
+color:#666;
+margin-bottom:30px;
+}
+
+.section{
+margin-bottom:30px;
+}
+
+label{
+display:block;
+margin-bottom:5px;
+font-weight:bold;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date]{
+width:100%;
+padding:10px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.question{
+margin-bottom:20px;
+}
+
+.options{
+margin-top:5px;
+}
+
+.options label{
+display:block;
+font-weight:normal;
+margin-bottom:5px;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#222;
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#000;
+}
+
+.success{
+display:none;
+text-align:center;
+color:green;
+font-size:18px;
+margin-top:20px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+<h1>Chimney & Fireplace Service Intake Form</h1>
+
+<p class="subtitle">
+Please complete this form before your appointment so we can prepare for your chimney or fireplace service visit.
+</p>
+
+
+<div class="section">
+
+<label>Full Name</label>
+<input type="text" id="name">
+
+<label>Date</label>
+<input type="date" id="date">
+
+<label>Address</label>
+<input type="text" id="address">
+
+<label>Phone</label>
+<input type="tel" id="phone">
+
+<label>Email</label>
+<input type="email" id="email">
+
+</div>
+
+
+
+<div class="section">
+
+<div class="question">
+<b>1. What issue are you experiencing with the fireplace?</b>
+
+<div class="options">
+<label><input type="radio" name="q1" value="Fireplace not turning on"> Fireplace not turning on</label>
+<label><input type="radio" name="q1" value="Weak or uneven flame"> Weak or uneven flame</label>
+<label><input type="radio" name="q1" value="Gas smell"> Gas smell</label>
+<label><input type="radio" name="q1" value="Strange noise from fireplace"> Strange noise from fireplace</label>
+<label><input type="radio" name="q1" value="Other"> Other</label>
+</div>
+
+</div>
+
+
+
+<div class="question">
+<b>2. Do you smell gas near the fireplace?</b>
+
+<div class="options">
+<label><input type="radio" name="q2" value="Yes"> Yes</label>
+<label><input type="radio" name="q2" value="No"> No</label>
+<label><input type="radio" name="q2" value="Not sure"> Not sure</label>
+</div>
+
+</div>
+
+
+
+<div class="question">
+<b>3. Approximately how old is the fireplace?</b>
+
+<div class="options">
+<label><input type="radio" name="q3" value="Less than 10 years"> Less than 10 years</label>
+<label><input type="radio" name="q3" value="10–20 years"> 10–20 years</label>
+<label><input type="radio" name="q3" value="20+ years"> 20+ years</label>
+<label><input type="radio" name="q3" value="Not sure"> Not sure</label>
+</div>
+
+</div>
+
+
+
+<div class="question">
+<b>4. When was the last time the fireplace was serviced?</b>
+
+<div class="options">
+<label><input type="radio" name="q4" value="Less than 1 year ago"> Less than 1 year ago</label>
+<label><input type="radio" name="q4" value="1–3 years ago"> 1–3 years ago</label>
+<label><input type="radio" name="q4" value="More than 3 years ago"> More than 3 years ago</label>
+<label><input type="radio" name="q4" value="Not sure"> Not sure</label>
+</div>
+
+</div>
+
+
+
+<div class="question">
+<b>5. When did the issue start?</b>
+
+<div class="options">
+<label><input type="radio" name="q5" value="Recently"> Recently</label>
+<label><input type="radio" name="q5" value="A few weeks ago"> A few weeks ago</label>
+<label><input type="radio" name="q5" value="A few months ago"> A few months ago</label>
+<label><input type="radio" name="q5" value="Long time"> Long time</label>
+</div>
+
+</div>
+
+
+
+<div class="question">
+<b>6. What type of fireplace do you have?</b>
+
+<div class="options">
+<label><input type="radio" name="q6" value="Gas fireplace"> Gas fireplace</label>
+<label><input type="radio" name="q6" value="Wood burning fireplace"> Wood burning fireplace</label>
+<label><input type="radio" name="q6" value="Electric fireplace"> Electric fireplace</label>
+<label><input type="radio" name="q6" value="Not sure"> Not sure</label>
+</div>
+
+</div>
+
+
+</div>
+
+
+<button onclick="submitForm()">Submit Intake Form</button>
+
+<div class="success" id="successMessage">
+Thank you! Your form has been submitted.
+</div>
+
+</div>
+
+
+<script>
+
+function submitForm(){
+
+document.getElementById("successMessage").style.display="block";
+
+window.scrollTo(0,document.body.scrollHeight);
+
+}
+
+</script>
+
+
+</body>
+</html>
