@@ -11,8 +11,8 @@
 body{
 font-family: Arial, sans-serif;
 background:#f4f6f9;
-padding:20px;
 margin:0;
+padding:20px;
 }
 
 .container{
@@ -56,6 +56,7 @@ margin-top:5px;
 border:1px solid #ccc;
 border-radius:6px;
 font-size:15px;
+box-sizing:border-box;
 }
 
 textarea{
@@ -71,10 +72,11 @@ border:none;
 width:100%;
 font-size:17px;
 border-radius:6px;
+cursor:pointer;
 }
 
 button:hover{
-background:#0f2e5f;
+background:#0e2f63;
 }
 
 .hidden{
@@ -120,16 +122,19 @@ Please complete this form before your appointment so we can prepare for your chi
 <label>1. What issue are you experiencing with the fireplace?</label>
 
 <select name="Issue" id="issueSelect" onchange="toggleOther()">
-<option>Fireplace not turning on</option>
-<option>Weak or uneven flame</option>
-<option>Gas smell</option>
-<option>Strange noise from fireplace</option>
-<option>Other</option>
+<option value="Fireplace not turning on">Fireplace not turning on</option>
+<option value="Weak or uneven flame">Weak or uneven flame</option>
+<option value="Gas smell">Gas smell</option>
+<option value="Strange noise from fireplace">Strange noise from fireplace</option>
+<option value="Other">Other</option>
 </select>
 
 <div id="otherBox" class="hidden">
-<label>Please describe</label>
+
+<label>Please describe the issue</label>
+
 <textarea name="Other issue" rows="3"></textarea>
+
 </div>
 
 <label>2. Do you smell gas near the fireplace?</label>
