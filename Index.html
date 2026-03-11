@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
 
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Chimney & Fireplace Service Intake Form</title>
@@ -9,25 +10,25 @@
 <style>
 
 body{
-font-family: Arial, sans-serif;
+font-family:Arial, sans-serif;
 background:#f4f6f9;
 margin:0;
 padding:20px;
 }
 
 .container{
-max-width:700px;
+max-width:720px;
 margin:auto;
 background:white;
-padding:25px;
+padding:30px;
 border-radius:10px;
-box-shadow:0 0 12px rgba(0,0,0,0.08);
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
 .logo{
 display:block;
 margin:auto;
-max-width:280px;
+max-width:260px;
 margin-bottom:10px;
 }
 
@@ -40,7 +41,7 @@ margin-bottom:5px;
 .subtitle{
 text-align:center;
 color:#666;
-margin-bottom:25px;
+margin-bottom:30px;
 }
 
 label{
@@ -49,7 +50,7 @@ margin-top:15px;
 font-weight:bold;
 }
 
-input, select, textarea{
+input,select,textarea{
 width:100%;
 padding:12px;
 margin-top:5px;
@@ -84,14 +85,13 @@ display:none;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
-<img src="logo.JPG" class="logo">
+<img src="logo.JPG" class="logo" alt="GasFix Fireplace Services Logo">
 
 <h1>Chimney & Fireplace Service Intake Form</h1>
 
@@ -122,17 +122,18 @@ Please complete this form before your appointment so we can prepare for your chi
 <label>1. What issue are you experiencing with the fireplace?</label>
 
 <select name="Issue" id="issueSelect" onchange="toggleOther()">
+
 <option value="Fireplace not turning on">Fireplace not turning on</option>
 <option value="Weak or uneven flame">Weak or uneven flame</option>
 <option value="Gas smell">Gas smell</option>
 <option value="Strange noise from fireplace">Strange noise from fireplace</option>
 <option value="Other">Other</option>
+
 </select>
 
 <div id="otherBox" class="hidden">
 
 <label>Please describe the issue</label>
-
 <textarea name="Other issue" rows="3"></textarea>
 
 </div>
@@ -191,14 +192,14 @@ Please complete this form before your appointment so we can prepare for your chi
 
 function toggleOther(){
 
-var select = document.getElementById("issueSelect");
-var box = document.getElementById("otherBox");
+var select=document.getElementById("issueSelect");
+var box=document.getElementById("otherBox");
 
-if(select.value === "Other"){
-box.style.display = "block";
+if(select.value==="Other"){
+box.style.display="block";
 }
 else{
-box.style.display = "none";
+box.style.display="none";
 }
 
 }
