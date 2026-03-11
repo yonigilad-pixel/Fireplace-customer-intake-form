@@ -1,154 +1,176 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chimney & Fireplace Service Intake Form</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background:#f4f6f9;
+      padding:20px;
+      margin:0;
+    }
 
-<title>Chimney & Fireplace Service Intake Form</title>
+    .container{
+      max-width:700px;
+      margin:30px auto;
+      background:white;
+      padding:25px;
+      border-radius:12px;
+      box-shadow:0 0 14px rgba(0,0,0,0.08);
+    }
 
-<style>
+    .logo-wrap{
+      text-align:center;
+      margin-bottom:10px;
+    }
 
-body{
-font-family: Arial, sans-serif;
-background:#f4f6f9;
-padding:20px;
-}
+    .logo{
+      max-width:260px;
+      width:100%;
+      height:auto;
+    }
 
-.container{
-max-width:700px;
-margin:auto;
-background:white;
-padding:25px;
-border-radius:8px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
+    h1{
+      text-align:center;
+      font-size:28px;
+      margin:10px 0 8px;
+      color:#123b7a;
+    }
 
-h1{
-text-align:center;
-}
+    .subtitle{
+      text-align:center;
+      color:#666;
+      margin-bottom:25px;
+      line-height:1.5;
+    }
 
-.subtitle{
-text-align:center;
-color:#666;
-margin-bottom:25px;
-}
+    label{
+      display:block;
+      margin-top:14px;
+      font-weight:bold;
+      color:#222;
+    }
 
-label{
-display:block;
-margin-top:10px;
-font-weight:bold;
-}
+    input, select{
+      width:100%;
+      padding:12px;
+      margin-top:6px;
+      border:1px solid #ccc;
+      border-radius:6px;
+      box-sizing:border-box;
+      font-size:16px;
+      background:#fff;
+    }
 
-input, select{
-width:100%;
-padding:10px;
-margin-top:5px;
-border:1px solid #ccc;
-border-radius:4px;
-}
+    button{
+      margin-top:24px;
+      background:#123b7a;
+      color:white;
+      padding:15px;
+      border:none;
+      width:100%;
+      font-size:17px;
+      font-weight:bold;
+      border-radius:6px;
+    }
 
-button{
-margin-top:20px;
-background:black;
-color:white;
-padding:15px;
-border:none;
-width:100%;
-font-size:16px;
-border-radius:5px;
-}
-
-button:hover{
-background:#333;
-}
-
-</style>
-
+    .note{
+      margin-top:14px;
+      font-size:13px;
+      color:#666;
+      text-align:center;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="container">
 
-<div class="container">
+    <div class="logo-wrap">
+      <img src="logo.jpg" alt="GasFix Fireplace Services Logo" class="logo">
+    </div>
 
-<h1>Chimney & Fireplace Service Intake Form</h1>
+    <h1>Chimney & Fireplace Service Intake Form</h1>
 
-<p class="subtitle">
-Please complete this form before your appointment so we can prepare for your chimney or fireplace service visit.
-</p>
+    <p class="subtitle">
+      Please complete this form before your appointment so we can prepare for your chimney or fireplace service visit.
+    </p>
 
-<form action="https://formsubmit.co/eitangonen942@gmail.com" method="POST">
+    <form action="https://formsubmit.co/eitangonen942@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Chimney & Fireplace Service Intake">
 
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_subject" value="New Chimney & Fireplace Service Intake">
+      <label>Full Name</label>
+      <input type="text" name="Name" required>
 
-<label>Full Name</label>
-<input type="text" name="Name" required>
+      <label>Date</label>
+      <input type="date" name="Date">
 
-<label>Date</label>
-<input type="date" name="Date">
+      <label>Address</label>
+      <input type="text" name="Address">
 
-<label>Address</label>
-<input type="text" name="Address">
+      <label>Phone</label>
+      <input type="tel" name="Phone">
 
-<label>Phone</label>
-<input type="tel" name="Phone">
+      <label>Email</label>
+      <input type="email" name="Customer Email">
 
-<label>Email</label>
-<input type="email" name="Customer Email">
+      <label>1. What issue are you experiencing with the fireplace?</label>
+      <select name="Issue">
+        <option>Fireplace not turning on</option>
+        <option>Weak or uneven flame</option>
+        <option>Gas smell</option>
+        <option>Strange noise from fireplace</option>
+        <option>Other</option>
+      </select>
 
-<label>1. What issue are you experiencing with the fireplace?</label>
-<select name="Issue">
-<option>Fireplace not turning on</option>
-<option>Weak or uneven flame</option>
-<option>Gas smell</option>
-<option>Strange noise from fireplace</option>
-<option>Other</option>
-</select>
+      <label>2. Do you smell gas near the fireplace?</label>
+      <select name="Gas smell">
+        <option>Yes</option>
+        <option>No</option>
+        <option>Not sure</option>
+      </select>
 
-<label>2. Do you smell gas near the fireplace?</label>
-<select name="Gas smell">
-<option>Yes</option>
-<option>No</option>
-<option>Not sure</option>
-</select>
+      <label>3. Approximately how old is the fireplace?</label>
+      <select name="Age">
+        <option>Less than 10 years</option>
+        <option>10–20 years</option>
+        <option>20+ years</option>
+        <option>Not sure</option>
+      </select>
 
-<label>3. Approximately how old is the fireplace?</label>
-<select name="Age">
-<option>Less than 10 years</option>
-<option>10–20 years</option>
-<option>20+ years</option>
-<option>Not sure</option>
-</select>
+      <label>4. When was the last time the fireplace was serviced?</label>
+      <select name="Last service">
+        <option>Less than 1 year ago</option>
+        <option>1–3 years ago</option>
+        <option>More than 3 years ago</option>
+        <option>Not sure</option>
+      </select>
 
-<label>4. When was the last time the fireplace was serviced?</label>
-<select name="Last service">
-<option>Less than 1 year ago</option>
-<option>1–3 years ago</option>
-<option>More than 3 years ago</option>
-<option>Not sure</option>
-</select>
+      <label>5. When did the issue start?</label>
+      <select name="Issue started">
+        <option>Recently</option>
+        <option>A few weeks ago</option>
+        <option>A few months ago</option>
+        <option>Long time</option>
+      </select>
 
-<label>5. When did the issue start?</label>
-<select name="Issue started">
-<option>Recently</option>
-<option>A few weeks ago</option>
-<option>A few months ago</option>
-<option>Long time</option>
-</select>
+      <label>6. What type of fireplace do you have?</label>
+      <select name="Fireplace type">
+        <option>Gas fireplace</option>
+        <option>Wood burning fireplace</option>
+        <option>Electric fireplace</option>
+        <option>Not sure</option>
+      </select>
 
-<label>6. What type of fireplace do you have?</label>
-<select name="Fireplace type">
-<option>Gas fireplace</option>
-<option>Wood burning fireplace</option>
-<option>Electric fireplace</option>
-<option>Not sure</option>
-</select>
+      <button type="submit">Submit Intake Form</button>
+    </form>
 
-<button type="submit">Submit Intake Form</button>
-
-</form>
-
-</div>
-
+    <div class="note">
+      GasFix Fireplace Services
+    </div>
+  </div>
 </body>
 </html>
